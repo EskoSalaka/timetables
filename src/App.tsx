@@ -180,7 +180,12 @@ const App: FunctionComponent = () => {
             <CircularProgress />
           </Box>
         )}
-        {error && <Typography>Something went wrong. Check if</Typography>}
+        {error && <Typography>Something went wrong.</Typography>}
+        {data && data.plan.itineraries.length === 0 && (
+          <Typography>
+            Looks like no routes were found with the specified coordinates :(
+          </Typography>
+        )}
         {data && <Iteneraries itineraries={data.plan.itineraries} />}
       </Box>
     </div>

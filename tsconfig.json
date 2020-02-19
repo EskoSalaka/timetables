@@ -13,13 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*", "src/*"]
-    },
-    "typeRoots": ["./src/*", "./node_modules/@types"]
+    "jsx": "react"
   },
-
-  "include": ["src/**/*", "types.d.ts"]
+  "include": ["src/**/*"]
 }
