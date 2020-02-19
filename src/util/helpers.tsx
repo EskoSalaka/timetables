@@ -1,10 +1,19 @@
 const parseTimestamp = (timeStamp: number): string => {
-  var date = new Date(timeStamp)
-  return date.toLocaleTimeString('en-GB').substr(0, 5)
+  return new Date(timeStamp).toLocaleTimeString(['fi-FI'], {
+    hour: '2-digit',
+    minute: '2-digit'
+  })
 }
 
+const getCurrentTime = (): string => {
+  return new Date().toLocaleTimeString(['fi-FI'], {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  })
+}
 const parseMeters = (meters: number): string => {
   return (meters / 1000.0).toFixed(1)
 }
 
-export { parseTimestamp, parseMeters }
+export { parseTimestamp, getCurrentTime, parseMeters }

@@ -75,7 +75,7 @@ const App: FunctionComponent = () => {
     setTextFieldFrom(from)
   }
 
-  const onTextFieldChange = e => {
+  const onTextFieldChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
     const { value, id } = e.target
     const numValue = parseFloat(
@@ -93,7 +93,7 @@ const App: FunctionComponent = () => {
     }
   }
 
-  const onSaveButtonClick = e => {
+  const onSaveButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
 
     setFrom(textFieldFrom)

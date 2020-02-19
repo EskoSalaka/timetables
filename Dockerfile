@@ -17,7 +17,7 @@ RUN npm install
 RUN npm install react-scripts@3.0.1 -g --silent
 RUN npm run build
 
-# Specify port
+# Specify port, this doesnt actually do much, its just a directive
 EXPOSE 3000
 
 # start app

@@ -29,7 +29,7 @@ export interface Trip {
 }
 
 export interface Leg {
-  mode: Mode
+  mode: string | Mode
   startTime: number
   endTime: number
   transitLeg: boolean
