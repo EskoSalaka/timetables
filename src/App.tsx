@@ -68,7 +68,7 @@ const App: FunctionComponent = () => {
 
   const onSwapButtonClick = e => {
     e.preventDefault()
-    let fromOld = from
+    const fromOld = from
     setFrom(to)
     setTo(fromOld)
     setTextFieldTo(to)

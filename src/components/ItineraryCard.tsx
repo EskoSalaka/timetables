@@ -47,7 +47,7 @@ const ItineraryCard: FunctionComponent<itineraryCardProps> = ({
 }) => {
   const classes = useStyles()
 
-  let transitLegs = itinerary.legs.filter(leg => leg.transitLeg === true)
+  const transitLegs = itinerary.legs.filter(leg => leg.transitLeg === true)
 
   return (
     <Card className={classes.root}>

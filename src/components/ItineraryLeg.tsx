@@ -62,10 +62,10 @@ const ItineraryLeg: FunctionComponent<legProps> = ({ leg }) => {
               leg.mode === Mode.SUBWAY
                 ? deepOrange[500]
                 : leg.mode === Mode.BUS
-                ? blue[500]
-                : leg.mode === Mode.RAIL
-                ? deepPurple[500]
-                : green[500]
+                  ? blue[500]
+                  : leg.mode === Mode.RAIL
+                    ? deepPurple[500]
+                    : green[500]
             }
             width='100%'
           />
